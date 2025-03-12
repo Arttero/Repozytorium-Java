@@ -57,6 +57,37 @@ public class TasksLab5 {
         nowyStudent.pokazDane();
     }
     protected void Task04() {
+        ListaStudentow lista = new ListaStudentow();
 
+        //przykladowe dodanie nowego studenta (pod indeks 0 i 1)
+        lista.dodanieStudenta(0,new Student(new Osoba("Jan", "Kowalski", 23),
+                123456, "Informatyka", 2));
+        lista.dodanieStudenta(1,new Student(new Osoba("Michal", "Nowak", 20),
+                1234567,"Informatyka",1));
+
+
+        //przykladowe wyswietlenie konkretnego studenta
+        lista.pokazStudenta(0);
+        System.out.println("===============");
+
+
+        //przykladowa edycja studenta na pozycji 0
+        lista.edycjaStudenta(0,new Student(new Osoba("Marcin","Kowalski",19),
+                123756,"Biologia",1));
+
+
+        //pokazanie wszystkich studentow na liscie
+        //lista.wyswietlWszystkichStudentow();
+
+
+        //pokazanie studentow w zakresie indeksu od 0 do 5
+        lista.pokazStudentowWzakresie(0,5);
+        System.out.println("===============");
+
+
+        //przykladowe usuniecie danych studenta (nadpisanie je podstawowymi danymi)
+        lista.usuniecieStudenta(0);
+
+        lista.pokazStudenta(0);
     }
 }
