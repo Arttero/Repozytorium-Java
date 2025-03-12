@@ -6,6 +6,7 @@ public class TasksLab2 {
     InputData inputData = new InputData();
 
     protected void Task01(){
+        //podawanie danych do wzoru
         System.out.print("Podaj a:");
         int a = inputData.InputInt();
         System.out.print("Podaj b:");
@@ -13,16 +14,19 @@ public class TasksLab2 {
         System.out.print("Podaj c:");
         int c = inputData.InputInt();
 
+        //wypisanie wzoru i obliczenie x1 i x2
         System.out.printf("Wzor:"+a+"x^2"+b+"x+"+c+"=0\n");
         int x1 = (int) (-b + Math.sqrt(b*b - 4 * a * c)) / (2 * a);
         int x2 = (int) (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
 
+        //wypisanie wyniku
         System.out.printf("x1 = "+x1);
         System.out.printf("\nx2 = "+x2);
     }
     protected void Task02(){
         System.out.printf("Podaj x: ");
         double x = inputData.InputDouble();
+
 
         double resultAx = a2(x);
         double resultBx = b2(x);
@@ -41,6 +45,7 @@ public class TasksLab2 {
         System.out.printf("Podaj z: ");
         int z = inputData.InputInt();
 
+        //sortowanie liczb
         int temp;
         if (x > y){
             temp = x;
@@ -58,7 +63,6 @@ public class TasksLab2 {
             y = temp;
         }
         System.out.printf("Posortowane liczby: %d %d %d\n",x,y,z);
-        System.out.print("\nTask 3 completed");
     }
     protected void Task04() {
         System.out.printf("Czy pada deszcz (true/false): ");
@@ -75,7 +79,6 @@ public class TasksLab2 {
             System.out.printf("Dostaniesz sie na uczelnie");
             System.out.printf("Milego dnia i pieknej pogody");
         }
-        System.out.printf("\nTask 4 completed");
     }
     protected void Task05() {
         System.out.print("Czy jest znizka na samochod (true/false): ");

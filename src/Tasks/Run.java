@@ -1,7 +1,6 @@
 package Tasks;
 
-import java.util.Scanner;
-
+//utworzenie klasy typu run
 public class Run {
 
     //obiekty klasy tasks
@@ -14,10 +13,12 @@ public class Run {
     //obiekt klasy Inputdata
     InputData inputData = new InputData();
 
+    //metoda runmain menu
     public void RunMain() {
         Menu();
     }
 
+    //utworzenie menu
     private void Menu() {
         while (true) {
             System.out.println("\n1. Lab 1");
@@ -30,6 +31,7 @@ public class Run {
 
             int chooseLab = inputData.InputInt();
 
+            //wybor labolatoria
             switch (chooseLab) {
                 case 1:
                     Lab1();
@@ -71,6 +73,7 @@ public class Run {
 
             int chooseZad = inputData.InputInt();
 
+            //wybor zadan
             switch (chooseZad) {
                 case 1:
                     tasksLab1.Task01();
@@ -116,6 +119,8 @@ public class Run {
             System.out.println("Wybierz zadanie: ");
 
             int chooseZad = inputData.InputInt();
+
+            //wybor zadan
             switch (chooseZad) {
                 case 1:
                     tasksLab2.Task01();
@@ -156,6 +161,8 @@ public class Run {
             System.out.println("Wybierz zadanie: ");
 
             int chooseZad = inputData.InputInt();
+
+            //wybor zadan
             switch (chooseZad) {
                 case 1:
                     tasksLab3.Task01();
@@ -195,6 +202,8 @@ public class Run {
             System.out.println("Wybierz zadanie: ");
 
             int chooseZad = inputData.InputInt();
+
+            //wybor zadan
             switch (chooseZad) {
                 case 1:
                     tasksLab4.Task01();
@@ -234,6 +243,8 @@ public class Run {
             System.out.println("Wybierz zadanie: ");
 
             int chooseZad = inputData.InputInt();
+
+            //wybor zadan
             switch (chooseZad){
                 case 1:
                     tasksLab5.Task01();

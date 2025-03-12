@@ -11,6 +11,7 @@ public class TasksLab3 {
         System.out.println("Podaj liczbe studentow: ");
         int n = scanner.nextInt();
 
+
         int i =0;
         int punkty;
         float suma = 0;
@@ -79,8 +80,8 @@ public class TasksLab3 {
     protected void Task05() {
         System.out.printf("Podaj slowo: ");
         String slowo = scanner.next();
-        String reversed = new StringBuilder(slowo).reverse().toString();
-        if(slowo.equals(reversed)){
+        String reversed = new StringBuilder(slowo).reverse().toString();//odwrocenie slowa
+        if(slowo.equals(reversed)){//jezeli slow jest takie same jak odwrocone
             System.out.printf("Podane slowo jest palindromem\n");
         }
         else{

@@ -2,6 +2,7 @@ package Tasks;
 
 import java.util.Random;
 import java.util.Scanner;
+import java.util.SortedMap;
 
 public class TasksLab4 {
     protected void Task01(){
@@ -57,7 +58,7 @@ public class TasksLab4 {
     protected void Task03(){
         String[] tablica = {"Jan","Krzysztof","Marek","Anna"};
 
-        for(String element : tablica){
+        for(String element : tablica){// for each
             System.out.println(element.toUpperCase());
         }
     }
@@ -73,7 +74,7 @@ public class TasksLab4 {
 
         System.out.printf("Wynik:\n");
         for (int i =slowa.length-1; i>=0; i--){
-            String odwroconeSlowo = new StringBuilder(slowa[i]).reverse().toString();
+            String odwroconeSlowo = new StringBuilder(slowa[i]).reverse().toString();//odwrocenie slowa
             System.out.println(odwroconeSlowo);
         }
     }
@@ -81,6 +82,7 @@ public class TasksLab4 {
         Scanner scanner = new Scanner(System.in);
         int[] liczby = new int[10];
         System.out.print("Podaj 10 liczb:\n");
+
         for(int i = 0; i < liczby.length; i++){
             System.out.printf("Podaj %d liczbe: ",i+1);
             liczby[i] = scanner.nextInt();
@@ -89,19 +91,47 @@ public class TasksLab4 {
         //sortowanie i wyswietlanie posortowanych liczb
         java.util.Arrays.sort(liczby);
         System.out.print("Wynik sortowania wyswietlania: ");
+
         for(int liczba : liczby){
             System.out.printf("%d ",liczba);
         }
     }
     protected void Task06(){
+        Scanner scanner = new Scanner(System.in);
+        int[] liczby = new int[5];
+        System.out.print("Podaj 5 liczb:\n");
+
+        for(int i = 0; i < liczby.length; i++){
+            System.out.printf("%d. liczba:",i+1);
+            liczby[i] = scanner.nextInt();
+        }
+
+        for(int liczba : liczby){// kazda liczba jest mnozona przez mniejsze liczby do momentu wyrownania(wyliczanie silnii)
+            int silnia = 1;
+            for(int i = 1; i <= liczba; i++){
+                silnia *= i;
+            }
+            System.out.printf("\nSilnia liczby %d: %d\n",liczba,silnia);
+        }
         
     }
     protected void Task07(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj pierwsza tablice: ");
+        String tablica1 = scanner.nextLine();
+        System.out.println("Podaj druga tablice: ");
+        String tablica2 = scanner.nextLine();
+        if(java.util.Objects.equals(tablica1,tablica2)){
+            System.out.println("Tablice sa takie same");
+        }
+        else{
+            System.out.println("Tablice sie roznia");
+        }
 
     }
 
     //zadanie 1
-    private int losujLiczbe(int min,int max){
+    private int losujLiczbe(int min,int max){//losowanie liczby z posrod minimalnej-maksymalnej
         Random random = new Random();
         return random.nextInt(max-min+1)+min;
     }

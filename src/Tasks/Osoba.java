@@ -1,5 +1,6 @@
 package Tasks;
 
+//utworzenie nowej klasy osoba
 public class Osoba {
     private String imie;
     private String nazwisko;
@@ -24,6 +25,7 @@ public class Osoba {
         this.wiek = 0;
     }
 
+    //metoda wypisujaca dane o osobie
     public void pokazDane() {
         System.out.println("Imie: " + imie + "\nNazwisko: " + nazwisko + "\nWiek: " + wiek+"\n");
     }
