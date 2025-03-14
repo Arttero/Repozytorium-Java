@@ -26,21 +26,24 @@ public class TasksLab3 {
     }
 
     protected void Task02(){
-        float sumaLiczbDodatnich =0;
-        float sumaLiczbUjemnych =0;
-        int i = 0;
+        float sumaLiczbDodatnich = 0,sumaLiczbUjemnych =0;
+        int i = 0,iloscLiczbDodatnich = 0,iloscLiczbUjemnych = 0;
 
         while (i<10){
             System.out.print("Podaj liczbe: ");
             float liczba = scanner.nextFloat();
             if(liczba<0){
                 sumaLiczbUjemnych += liczba;
+                iloscLiczbUjemnych++;
             }else{
                 sumaLiczbDodatnich += liczba;
+                iloscLiczbDodatnich++;
             }
             i++;
         }
-        System.out.printf("Suma liczb ujemych = "+sumaLiczbUjemnych+"\nSuma liczb dodatnich = "+sumaLiczbDodatnich);
+        System.out.println("Suma liczb dodatnych: " + sumaLiczbDodatnich+ "\nSuma liczb ujemnych: " + sumaLiczbUjemnych +
+                "\nIlosc liczb dodatnych: " + iloscLiczbDodatnich + "\nIlosc liczb ujemnych: " + iloscLiczbUjemnych);
+
     }
 
     protected void Task03() {
