@@ -1,4 +1,6 @@
-package Tasks;
+package Tasks.Lab2;
+
+import Tasks.InputData;
 
 public class TasksLab2 {
 

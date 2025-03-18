@@ -1,4 +1,4 @@
-package Tasks;
+package Tasks.Lab5;
 
 
 //utworzenie klasy typu student

@@ -1,4 +1,4 @@
-package Tasks;
+package Tasks.Lab5;
 
 //utworzenie nowej klasy osoba
 public class Osoba {

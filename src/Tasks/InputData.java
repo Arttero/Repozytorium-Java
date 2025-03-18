@@ -8,27 +8,27 @@ public class InputData {
     Scanner input = new Scanner(System.in);
 
     //metody do pobierania danych od uzytkownika/wczytywania danych
-    protected int InputInt() {
+    public int InputInt() {
         int value = input.nextInt();
         input.nextLine();
         return value;
     }
-    protected float InputFloat() {
+    public float InputFloat() {
         float value = input.nextFloat();
         input.nextLine();
         return value;
     }
-    protected boolean InputBool() {
+    public boolean InputBool() {
         boolean value = input.nextBoolean();
         input.nextLine();
         return value;
     }
-    protected double InputDouble() {
+    public double InputDouble() {
         double value = input.nextDouble();
         input.nextLine();
         return value;
     }
-    protected String InputString() {
+    public String InputString() {
         String value = input.nextLine();
         return value;
     }

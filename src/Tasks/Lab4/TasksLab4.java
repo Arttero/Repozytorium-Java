@@ -1,8 +1,7 @@
-package Tasks;
+package Tasks.Lab4;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class TasksLab4 {
     protected void Task01(){

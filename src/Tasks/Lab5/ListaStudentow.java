@@ -1,4 +1,4 @@
-package Tasks;
+package Tasks.Lab5;
 
 public class ListaStudentow {
     private final Student[] studenci = new Student[100];

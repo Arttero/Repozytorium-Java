@@ -1,4 +1,4 @@
-package Tasks;
+package Tasks.Lab3;
 import java.util.Scanner;
 import java.util.Random;
 

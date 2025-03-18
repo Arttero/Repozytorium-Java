@@ -1,5 +1,7 @@
-package Tasks;
+package Tasks.Lab1;
+import Tasks.InputData;
 
+import Tasks.InputData;
 import java.util.Random;
 
 public class TasksLab1 {
