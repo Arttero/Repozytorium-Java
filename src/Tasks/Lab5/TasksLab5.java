@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class TasksLab5 {
     Scanner scanner = new Scanner(System.in);
 
-    private String firstname, lastname;
-    private int age;
-
 
 
     protected void Task01() {

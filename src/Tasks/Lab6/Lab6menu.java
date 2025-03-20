@@ -14,6 +14,7 @@ public class Lab6menu {
             System.out.println("\n1. Zadanie 1");
             System.out.println("2. Zadanie 2");
             System.out.println("3. Zadanie 3");
+            System.out.println("4. Zadanie 4");
             System.out.println("0. Wyjscie");
             System.out.println("Wybierz zadanie: ");
 

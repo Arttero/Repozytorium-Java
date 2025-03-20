@@ -59,6 +59,7 @@ public class Run {
                     break;
                 case 6:
                     lab6.Lab6();
+                    break;
                 case 0:
                     System.out.printf("Wyjscie...");
                     return;
