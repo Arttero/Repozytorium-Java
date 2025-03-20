@@ -1,5 +1,10 @@
 package Tasks.Lab6;
 
+import Tasks.Lab6.Figury.Figura;
+import Tasks.Lab6.Figury.Prostokat;
+import Tasks.Lab6.Figury.Punkt;
+import Tasks.Lab6.Figury.Trojkat;
+
 public class TasksLab6 {
     Punkt punkt = new Punkt(5,8);
     Punkt punkt1 = new Punkt(3,6);
@@ -33,6 +38,10 @@ public class TasksLab6 {
         System.out.println("Wysokosc: "+trojkat.wys);
         System.out.println("Podstawa: "+trojkat.podst);
 
+        System.out.println("\n15. Prostokat");
+        Prostokat prostokat1 = new Prostokat(5,6);
+        prostokat1.przesun(3,5);
+        System.out.println("Lokalizacja po przesunieciu: ["+punkt.getX() + ", " + punkt.getY()+"]");
 
 
     }

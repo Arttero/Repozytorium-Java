@@ -1,6 +1,6 @@
-package Tasks.Lab6;
+package Tasks.Lab6.Figury;
 
-class Figura {
+public class Figura {
 	
 	//pola metody i kontruktory
 	Punkt punkt;
@@ -10,7 +10,7 @@ class Figura {
 	Figura(){
 		punkt = new Punkt(0,0);
 	}
-	Figura(String kolor){
+	public Figura(String kolor){
 		this.kolor=kolor;
 	}
 	Figura(Punkt punkt){
@@ -19,7 +19,7 @@ class Figura {
 	String getKolor(){
 		return kolor;
 	}
-	String opis(){
+	public String opis(){
 		return "Klasa Figura. Kolor obiektu: "+kolor;
 	}
 			

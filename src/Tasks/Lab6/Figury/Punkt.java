@@ -1,4 +1,4 @@
-package Tasks.Lab6;
+package Tasks.Lab6.Figury;
 
 public class Punkt {
     public double x, y;
