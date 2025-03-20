@@ -5,6 +5,7 @@ import Tasks.Lab2.Lab2menu;
 import Tasks.Lab3.Lab3menu;
 import Tasks.Lab4.Lab4menu;
 import Tasks.Lab5.Lab5menu;
+import Tasks.Lab6.Lab6menu;
 
 //utworzenie klasy typu run
 public class Run {
@@ -15,6 +16,7 @@ public class Run {
     Lab3menu lab3 = new Lab3menu();
     Lab4menu lab4 = new Lab4menu();
     Lab5menu lab5 = new Lab5menu();
+    Lab6menu lab6 = new Lab6menu();
 
     //obiekt klasy Inputdata
     InputData inputData = new InputData();
@@ -32,6 +34,7 @@ public class Run {
             System.out.println("3. Lab 3");
             System.out.println("4. Lab 4");
             System.out.println("5. Lab 5");
+            System.out.println("6. Lab 6");
             System.out.println("0. Wyjście");
             System.out.print("Wybierz lab: ");
 
@@ -54,6 +57,8 @@ public class Run {
                 case 5:
                     lab5.Lab5();
                     break;
+                case 6:
+                    lab6.Lab6();
                 case 0:
                     System.out.printf("Wyjscie...");
                     return;

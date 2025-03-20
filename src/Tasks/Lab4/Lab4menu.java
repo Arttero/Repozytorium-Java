@@ -1,7 +1,6 @@
 package Tasks.Lab4;
 
 import Tasks.InputData;
-import Tasks.Lab4.TasksLab4;
 
 public class Lab4menu {
     //obiekty klasy tasks
