@@ -22,6 +22,7 @@ public class Ksiegarnia {
 
     public void opisKsiegarnia(){
         System.out.println("Nazwa: " + nazwa);
+
         System.out.println("Lista ksiazek:\n");
         for(Ksiazka ksiazka : ksiazki){
             ksiazka.opis();
