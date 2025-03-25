@@ -1,9 +1,6 @@
 package Tasks.Lab6;
 
-import Tasks.Lab6.Figury.Figura;
-import Tasks.Lab6.Figury.Prostokat;
-import Tasks.Lab6.Figury.Punkt;
-import Tasks.Lab6.Figury.Trojkat;
+import Tasks.Lab6.Figury.*;
 
 public class TasksLab6 {
     Punkt punkt = new Punkt(5,8);
@@ -43,7 +40,20 @@ public class TasksLab6 {
         prostokat1.przesun(3,5);
         System.out.println("Lokalizacja po przesunieciu: ["+punkt.getX() + ", " + punkt.getY()+"]");
 
+        System.out.println("\n17. Kwadrat");
+        Kwadrat kwadrat = new Kwadrat(4);
+        System.out.println("Bok kwadratu: "+kwadrat.getBok());
+        System.out.println("Powierzchnia kwadratu: "+kwadrat.getPowierzchnia());
 
+        System.out.println("\n19.");
+        System.out.println(kwadrat.opis());
+        System.out.println(trojkat.opis());
+        System.out.println(prostokat.opis());
+        System.out.println(figura.opis());
+
+        Okrag okrag = new Okrag();
+        okrag.setPromien(7);
+        System.out.println("\nPole powierzchni okregu: "+ okrag.getPowierzchnia());
     }
 
     public void Task02(){

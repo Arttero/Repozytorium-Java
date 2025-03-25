@@ -26,4 +26,9 @@ public class Prostokat extends Figura {
 		punkt.setX(punkt.getX() + x);
 		punkt.setY(punkt.getY() + y);
 	}
+
+	@Override
+	public String opis() {
+		return super.opis();
+	}
 }

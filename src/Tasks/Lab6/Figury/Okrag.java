@@ -1,12 +1,13 @@
 package Tasks.Lab6.Figury;
 
-public class Okrag {
+public class Okrag extends Figura {
     private Punkt srodek;
     private double promien;
 
 
     //konstruktor pusty
     public Okrag() {
+        super();
         this.srodek = new Punkt(0,0);
         this.promien = 0;
     }
@@ -38,5 +39,4 @@ public class Okrag {
         double y = punkt.getY() - srodek.getY();
         return (x*x + y*y) <= (promien*promien);
     }
-
 }

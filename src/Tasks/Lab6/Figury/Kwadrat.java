@@ -1,6 +1,21 @@
 package Tasks.Lab6.Figury;
 
-public class Kwadrat extends Figura {
+public class Kwadrat extends Prostokat {
+    public Kwadrat(double bok) {
+        super(bok,bok);
+    }
 
-//17 do dokonczenia bo zaraz mnie cos strzeli
+    public double getBok(){
+        return this.wys;
+    }
+
+    public void setBok(double bok){
+        this.wys=bok;
+        this.szer=bok;
+    }
+
+    @Override
+    public String opis() {
+        return super.opis();
+    }
 }

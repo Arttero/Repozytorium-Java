@@ -16,5 +16,9 @@ public class Trojkat extends Figura {
 		this.wys = wys;
 		this.podst = podst;
 	}
-	
+
+	@Override
+	public String opis() {
+		return super.opis();
+	}
 }
