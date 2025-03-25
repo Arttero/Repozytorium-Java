@@ -1,4 +1,4 @@
-package Tasks.Lab6.Figury;
+package Tasks.Lab6.ZAD1;
 
 public class Prostokat extends Figura {
 	double wys=0, szer=0;

@@ -1,6 +1,9 @@
 package Tasks.Lab6;
 
-import Tasks.Lab6.Figury.*;
+import Tasks.Lab6.ZAD1.*;
+import Tasks.Lab6.ZAD2.Samochod;
+import Tasks.Lab6.ZAD2.SamochodOsobowy;
+import Tasks.Lab6.ZAD3.*;
 
 public class TasksLab6 {
     Punkt punkt = new Punkt(5,8);
@@ -58,9 +61,28 @@ public class TasksLab6 {
 
     public void Task02(){
 
+        Samochod samochod1 = new Samochod("Audi", "A4", "D", "Bialy", 2015, 10000);
+        samochod1.opis();
+        System.out.println("-------");
+        Samochod samochod2 = new Samochod("Toyota", "Jaris", "C", "Czarny", 2001, 4021);
+        samochod2.opis();
+        System.out.println("-------");
+        Samochod samochod3 = new SamochodOsobowy("Audi", "A4", "D", "Bialy", 2015, 10000, 2.5f, 0.8f, 2);
+        samochod3.opis();
     }
 
     public void Task03(){
+        Ksiegarnia ksiegarnia = new Ksiegarnia("Ksiegarnia");
 
+        Ksiazka powiesc1 = new Powiesc("Wiedzmin","Andrzej Sapkowski", 39.99, "Fantasy");
+        Ksiazka podrecznik1 = new Podrecznik("Wzorce Projektowe","<AUTOR>", 29.99, "Informatyka");
+
+        ksiegarnia.dodajKsiazke(powiesc1);
+        ksiegarnia.dodajKsiazke(podrecznik1);
+
+        ksiegarnia.dodajKlienta(new Klient("Jan", "Kowalski"));
+        ksiegarnia.dodajKlienta(new Klient("Dominik", "Nowak"));
+
+        ksiegarnia.opisKsiegarnia();
     }
 }

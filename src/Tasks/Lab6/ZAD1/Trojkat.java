@@ -1,4 +1,4 @@
-package Tasks.Lab6.Figury;
+package Tasks.Lab6.ZAD1;
 
 public class Trojkat extends Figura {
 	public double wys=0;
