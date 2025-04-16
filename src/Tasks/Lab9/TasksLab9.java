@@ -72,7 +72,7 @@ public class TasksLab9 {
         System.out.println("\nPełnoletni uczestnicy:");
         for (UczestnikWydarzenia uczestnik : uczestnicy) {
             if (uczestnik.isPelnoletni()) {
-                System.out.println(uczestnik.getImie());
+                System.out.println("ID: "+ uczestnik.getId() + "Imię: " +uczestnik.getImie());
             }
         }
     }
