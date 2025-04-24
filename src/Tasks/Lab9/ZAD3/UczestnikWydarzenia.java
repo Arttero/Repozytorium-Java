@@ -1,4 +1,4 @@
-package Tasks.Lab9;
+package Tasks.Lab9.ZAD3;
 
 import java.util.Objects;
 
@@ -28,11 +28,9 @@ public class UczestnikWydarzenia {
 
     @Override
     public String toString() {
-        return "UczestnicyWydarzenia{" +
-                "id=" + id +
-                ", imie='" + imie + '\'' +
-                ", wiek=" + wiek +
-                '}';
+        return  "ID = " + id +
+                " | imię = " + imie +
+                ", wiek = " + wiek;
     }
 
     @Override

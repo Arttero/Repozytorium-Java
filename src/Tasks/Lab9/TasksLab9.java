@@ -1,5 +1,8 @@
 package Tasks.Lab9;
 
+import Tasks.Lab9.ZAD3.UczestnikWydarzenia;
+import Tasks.Lab9.ZAD4.Osoba;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -72,11 +75,31 @@ public class TasksLab9 {
         System.out.println("\nPełnoletni uczestnicy:");
         for (UczestnikWydarzenia uczestnik : uczestnicy) {
             if (uczestnik.isPelnoletni()) {
-                System.out.println("ID: "+ uczestnik.getId() + "Imię: " +uczestnik.getImie());
+                System.out.println("ID: "+ uczestnik.getId() + " | Imię: " +uczestnik.getImie());
             }
         }
     }
     public void Task04(){
+        List<Osoba> listaOsob = new ArrayList<>();
+
+        listaOsob.add(new Osoba("Nikolas", "Kida", 20));
+        listaOsob.add(new Osoba("Marcin", "Kida", 20));
+        listaOsob.add(new Osoba("Dominik","Kuraś",21));
+        listaOsob.add(new Osoba("Wojtek", "Knapik", 20));
+
+        System.out.println("Lista osób: ");
+        for (Osoba osoba : listaOsob){
+            System.out.println(osoba);
+        }
+
+        List<Osoba> subList = listaOsob.subList(0, 2);
+        System.out.println("Pod lista: (od 0 do 2)");
+        for (Osoba osoba : subList){
+            System.out.println(osoba);
+        }
+        listaOsob.removeAll(subList);
+        System.out.println("Pod lista osób po usunięciu: ");
+        System.out.println(listaOsob);
 
     }
     public void Task05(){
