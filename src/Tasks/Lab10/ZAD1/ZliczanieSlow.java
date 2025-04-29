@@ -19,7 +19,7 @@ public class ZliczanieSlow {
             wordMap.put(word, wordMap.getOrDefault(word, 0) + 1);
         }
         System.out.println("Lista wystąpień: słów:\n");
-        for(Map.Entry<String, Integer> entry : wordMap.entrySet()) {
+        for(Map.Entry<String, Integer> entry : wordMap.entrySet()) {// for each
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
     }

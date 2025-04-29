@@ -21,7 +21,7 @@ public class SystemLogowania {
                 case "1":
                     System.out.println("Podaj login:");
                     String login = sc.nextLine().trim();
-                    if (uzytkownik.containsKey(login)) {
+                    if (uzytkownik.containsKey(login)) { //sprawdza czy podany uzytkownik istnieje
                         System.out.println("Taki użytkownik już istnieje.");
                     } else {
                         System.out.println("Podaj hasło:");
@@ -36,6 +36,7 @@ public class SystemLogowania {
                     if (uzytkownik.containsKey(loginUzytkownika)) {
                         System.out.println("Podaj hasło");
                         String hasloUzytkownika = sc.nextLine().trim();
+                        //sprawdzanie czy podane haslo jest poprawne dla podanego wczesniej uzytkownika
                         if (uzytkownik.get(loginUzytkownika).equals(hasloUzytkownika)) {
                             System.out.println("Zalogowano pomyślnie!");
                         } else {

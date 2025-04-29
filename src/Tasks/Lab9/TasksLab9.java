@@ -69,11 +69,13 @@ public class TasksLab9 {
         uczestnicy.add(new UczestnikWydarzenia(3,"Edek", 17));
 
         System.out.println("Lista uczestników:");
+        //wyswietlanie listy uczestnikow
         for (UczestnikWydarzenia uczestnik : uczestnicy){
             System.out.println(uczestnik);
         }
 
         System.out.println("\nPełnoletni uczestnicy:");
+        // wyswietlanie danych o pelnoletnich uzytownikach
         for (UczestnikWydarzenia uczestnik : uczestnicy) {
             if (uczestnik.isPelnoletni()) {
                 System.out.println("ID: "+ uczestnik.getId() + " | Imię: " +uczestnik.getImie());
@@ -83,6 +85,7 @@ public class TasksLab9 {
     public void Task04(){
         List<Osoba> listaOsob = new ArrayList<>();
 
+        //tworzenie listy osob
         listaOsob.add(new Osoba("Nikolas", "Kida", 20));
         listaOsob.add(new Osoba("Marcin", "Kida", 20));
         listaOsob.add(new Osoba("Dominik","Kuraś",21));
@@ -93,6 +96,7 @@ public class TasksLab9 {
             System.out.println(osoba);
         }
 
+        //tworzenie subListy
         List<Osoba> subList = listaOsob.subList(0, 2);
         System.out.println("Pod lista: (od 0 do 2)");
         for (Osoba osoba : subList){
@@ -113,7 +117,7 @@ public class TasksLab9 {
 
         List<Integer> list2 = new ArrayList<>();
 
-        ListIterator<Integer> iterator = list1.listIterator(list1.size());
+        ListIterator<Integer> iterator = list1.listIterator(list1.size()); //uzycie listIteraror'a
         while (iterator.hasPrevious()) {
             list2.add(iterator.previous());
         }
