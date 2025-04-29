@@ -5,6 +5,7 @@ import Tasks.Lab9.ZAD4.Osoba;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Scanner;
 
 public class TasksLab9 {
@@ -102,7 +103,40 @@ public class TasksLab9 {
         System.out.println(listaOsob);
 
     }
-    public void Task05(){
+    public void Task05() {
+        List<Integer> list1 = new ArrayList<>();
 
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(4);
+
+        List<Integer> list2 = new ArrayList<>();
+
+        ListIterator<Integer> iterator = list1.listIterator(list1.size());
+        while (iterator.hasPrevious()) {
+            list2.add(iterator.previous());
+        }
+
+        System.out.println("Lista pierwsza");
+        int count = 0; // by poprawnie stawialo przecinki
+        for (Integer i : list1) {
+            System.out.print(i);
+            if (count < list1.size() - 1) {
+                System.out.print(", ");
+                count++;
+            }
+        }
+        System.out.println();
+
+        System.out.println("Druga lista");
+        count = 0;
+        for (Integer i : list2) {
+            System.out.print(i);
+            if (count < list2.size() - 1) {
+                System.out.print(", ");
+                count++;
+            }
+        }
     }
 }
