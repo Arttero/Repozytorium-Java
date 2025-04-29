@@ -2,6 +2,7 @@ package Tasks.Lab10;
 
 import Tasks.Lab10.ZAD1.ZliczanieSlow;
 import Tasks.Lab10.ZAD2.SystemLogowania;
+import Tasks.Lab10.ZAD3.KartaDan;
 
 public class TasksLab10 {
     public void Task01(){
@@ -11,6 +12,6 @@ public class TasksLab10 {
         new SystemLogowania().MenuLogowania();
     }
     public void Task03(){
-
+        new KartaDan().ListaDan();
     }
 }
